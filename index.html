@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+     <link type="image/x-icon" href="/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=WDXL+Lubrifont+JP+N&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/09aaa94611.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин товаров для сладкоежек</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container nav">
+                <li>
+                    <a href="#" class="logo">Sweet Lovers</a>
+                </li>
+                <li>
+                    <a href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+                <li>
+                    <div class="site-search">
+                        <input type="search" id="search-input">
+                        <button type="button" id="search-btn" class="fa-solid fa-magnifying-glass">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="filters">
+            <div class="filters-sort">
+                <label for="sort">Сортировка:</label>
+                <select name="sort" id="sort">
+                    <option selected value="alphabet">По алфавиту</option>
+                    <option value="expensive">Сначала дорогие</option>
+                    <option value="cheap">Сначала дешевые</option>
+               </select>
+            </div>
+        </div>
+        <section id="shop-items">
+        </section>
+        <p id="nothing-found">Ничего не найдено</p>
+    </main>
+    <footer id="contacts" class="container">
+        <a href="#" class="logo">Sweet Lovers</a>
+    </footer>
+    <template id="item-template">
+        <div class="shop-item">
+            <img src="">
+            <h1></h1>
+           
+            <div class="footer">
+                <span class="price"></span>
+            </div>
+        </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
